@@ -1,6 +1,5 @@
-***********
 1 - Install
-***********
+=====
 
 Unless you have Linux 2.4.20, you will have to compile 
 SpikeNET (but the process is very easy compared to 
@@ -8,27 +7,21 @@ other softwares)
 
 1.1 Compile SpikeNET
 
-	cd SpikeNETsources
+	cd src
+	make clean
 	make
 	cd ..
 
-1.2 Create symbolic link to SpikeNET exe file
-
-	rm -f SpikeNET
-	ln -s SpikeNETsources/SpikeNET
-
-************
 2 - Run Demo
-************
+=====
 
 In the main SpikeNET folder type
 
 	SpikeNET
 
 
-*********************
 3 - Directory content
-*********************
+=====
 
 Convolution (connexion) file folders for demo and exemples
 ----------------------------------------------------------
