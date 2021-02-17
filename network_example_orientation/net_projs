@@ -1,0 +1,10 @@
+# Retina -> V1 connections
+# ------------------------
+ON		S0-8	Convolutions/FS4-OR0.on
+OFF		S0-8	Convolutions/FS4-OR0.off
+ON		S180-8	Convolutions/FS4-OR180.on
+OFF		S180-8	Convolutions/FS4-OR180.off
+ON		S90-8	Convolutions/FS4-OR90.on
+OFF		S90-8	Convolutions/FS4-OR90.off
+ON		S270-8	Convolutions/FS4-OR270.on
+OFF		S270-8	Convolutions/FS4-OR270.off

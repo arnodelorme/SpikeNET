@@ -1,0 +1,8 @@
+# interative
+set NO_SHOW		0	          # verbose: 0=off, 1=on
+set DISPLAY		1             # display: 0=off, 1=on
+set WAIT_ENTER  0             # wait for the user to press enter between each image propgation: 0=off, 1=on
+
+# computing
+set MAX_TEMPS       100       # number of time steps
+set MAX_NORM	    8000      # spike latency sorting table size (see manual)

@@ -1,0 +1,13 @@
+
+# environnement variables
+set NO_SHOW		0	  	# verbose: 0=off, 1=on
+set DISPLAY		1		# display: 0=off, 1=on
+set WAIT_ENTER  0       # wait for the user to press enter: 0=off, 1=on
+
+# computing
+set MAX_TEMPS       1000   	# number of time steps
+set TIME_STOP		150		# stop simulation after time step 150
+set MAX_NORM	    30000   # spike latency sorting table size (see manual)
+set ZOOM_CONVO 		-1		# magnify convolution display on screen
+
+set CONVERGE		15

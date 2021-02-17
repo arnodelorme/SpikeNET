@@ -1,0 +1,23 @@
+# neuronal input maps (retina)
+# ----------------------------
+Name	ON	Layer	0	Zoom	2	Threshold	1	Estim	0.5	Pos	20	150	-1	Input	(Convo	Convolutions/OnCenter	Image1	-10000)	
+Name	OFF	Layer	0	Zoom	2	Threshold	1	Estim	0.5	Pos	20	270	-1	Input	(Convo	Convolutions/OffCenter	Image1	-10000)	
+
+# neuronal orientation maps (V1)
+# ------------------------------
+Name	S0-8	Layer	1	Zoom	2	Threshold	0.28	MOD	0.22	Estim	0.2	Pos	100	0	-1				
+Name	S45-8	Layer	1	Zoom	2	Threshold	0.28	MOD	0.22	Estim	0.2	Pos	100	60	-1				
+Name	S90-8	Layer	1	Zoom	2	Threshold	0.28	MOD	0.22	Estim	0.2	Pos	100	120	-1				
+Name	S135-8	Layer	1	Zoom	2	Threshold	0.28	MOD	0.22	Estim	0.2	Pos	100	180	-1				
+Name	S180-8	Layer	1	Zoom	2	Threshold	0.28	MOD	0.22	Estim	0.2	Pos	150	0	-1				
+Name	S225-8	Layer	1	Zoom	2	Threshold	0.28	MOD	0.22	Estim	0.2	Pos	150	60	-1				
+Name	S270-8	Layer	1	Zoom	2	Threshold	0.28	MOD	0.22	Estim	0.2	Pos	150	120	-1				
+Name	S315-8	Layer	1	Zoom	2	Threshold	0.28	MOD	0.22	Estim	0.2	Pos	150	180	-1				
+
+# neuronal face maps
+# ------------------
+Name	s3	Layer	2	State	superv	Zoom	2	Threshold	0.001	MOD	0.1	Estim	0.1	Object	Images/orl_faces/s3-1.pgm	Pos	250	75	0
+Name	s5	Layer	2	State	superv	Zoom	2	Threshold	0.001	MOD	0.1	Estim	0.1	Object	Images/orl_faces/s5-1.pgm	Pos	250	150	0
+Name	s7	Layer	2	State	superv	Zoom	2	Threshold	0.001	MOD	0.1	Estim	0.1	Object	Images/orl_faces/s7-1.pgm	Pos	250	225	0
+Name	s8	Layer	2	State	superv	Zoom	2	Threshold	0.001	MOD	0.1	Estim	0.1	Object	Images/orl_faces/s8-1.pgm	Pos	250	300	0
+

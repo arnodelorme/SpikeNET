@@ -1,0 +1,67 @@
+# Edit this file to define constants and custom build targets.
+# Please refer to the makemake documentation for more information.
+#
+# To compile multiple versions of a program or library, please study
+#     http://www.its.caltech.edu/~jafl/jcc/multi_version.html
+
+# Useful directories
+
+MYCODEDIR := -I. -I./sources-imgs -I./sources-readImgs -I./IO -I./Maps -I/usr/X11R6/include -I./SpikeNETcore
+
+# Directories to search for header files
+
+SEARCHDIRS := -I- ${MYCODEDIR}
+
+# makemake variables
+# -Wall -Werror
+
+DEPENDFLAGS := -g -w -fno-inline ${SEARCHDIRS}
+
+# C preprocessor (C, C++, FORTRAN)
+
+CPPFLAGS = 
+
+# C compiler
+
+CC     := g++
+CFLAGS  = ${DEPENDFLAGS}
+
+%.o : %.c
+	${CC} ${CPPFLAGS} ${CFLAGS} -c $< -o $@
+
+# C++ compiler
+
+CXX      := g++
+CXXFLAGS  = ${DEPENDFLAGS}
+
+%.o : %.cc
+	${CXX} ${CPPFLAGS} ${CXXFLAGS} -c $< -o $@
+
+%.o : %.C
+	${CXX} ${CPPFLAGS} ${CXXFLAGS} -c $< -o $@
+
+%.o : %.cpp
+	${CXX} ${CPPFLAGS} ${CXXFLAGS} -c $< -o $@
+
+%.o : %.cxx
+	${CXX} ${CPPFLAGS} ${CXXFLAGS} -c $< -o $@
+
+# FORTRAN compiler
+
+FC     := f77
+FFLAGS  = 
+
+# C/C++/Eiffel/FORTRAN linker
+
+LINKER    := g++
+LDFLAGS    = 
+LOADLIBES := -lm -L/usr/X11R6/lib -lXt -lXmu -lX11 
+
+# Java compiler
+
+JAVAC  := javac
+JFLAGS  = 
+JAR    := jar
+
+%.class : %.java
+	${JAVAC} ${JFLAGS} $<

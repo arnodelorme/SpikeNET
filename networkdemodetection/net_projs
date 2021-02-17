@@ -1,0 +1,55 @@
+# Retina -> V1 connections
+# ------------------------
+ON		S0-8	FILE	LOCK	Convolutions/FS8-OR0.on
+OFF		S0-8	FILE	LOCK	Convolutions/FS8-OR0.off
+ON		S180-8	FILE	LOCK	Convolutions/FS8-OR180.on
+OFF		S180-8	FILE	LOCK	Convolutions/FS8-OR180.off
+ON		S45-8	FILE	LOCK	Convolutions/FS8-OR45.on
+OFF		S45-8	FILE	LOCK	Convolutions/FS8-OR45.off
+ON		S225-8	FILE	LOCK	Convolutions/FS8-OR225.on
+OFF		S225-8	FILE	LOCK	Convolutions/FS8-OR225.off
+ON		S90-8	FILE	LOCK	Convolutions/FS8-OR90.on
+OFF		S90-8	FILE	LOCK	Convolutions/FS8-OR90.off
+ON		S270-8	FILE	LOCK	Convolutions/FS8-OR270.on
+OFF		S270-8	FILE	LOCK	Convolutions/FS8-OR270.off
+ON		S135-8	FILE	LOCK	Convolutions/FS8-OR135.on
+OFF		S135-8	FILE	LOCK	Convolutions/FS8-OR135.off
+ON		S315-8	FILE	LOCK	Convolutions/FS8-OR315.on
+OFF		S315-8	FILE	LOCK	Convolutions/FS8-OR315.off
+
+
+# V1 -> left and right eye
+# ------------------------
+S0-8	OD8	FILE	LOCK	GROUP	Eye	FaceConvos/OeilDroit/Cut/FS8-OR0.cnv
+S0-8	OG8	FILE	LOCK	GROUP	Eye	FaceConvos/OeilGauche/Cut/FS8-OR0.cnv
+S180-8	OD8	FILE	LOCK	GROUP	Eye	FaceConvos/OeilDroit/Cut/FS8-OR180.cnv
+S180-8	OG8	FILE	LOCK	GROUP	Eye	FaceConvos/OeilGauche/Cut/FS8-OR180.cnv
+S45-8	OD8	FILE	LOCK	GROUP	Eye	FaceConvos/OeilDroit/Cut/FS8-OR45.cnv
+S45-8	OG8	FILE	LOCK	GROUP	Eye	FaceConvos/OeilGauche/Cut/FS8-OR45.cnv
+S225-8	OD8	FILE	LOCK	GROUP	Eye	FaceConvos/OeilDroit/Cut/FS8-OR225.cnv
+S225-8	OG8	FILE	LOCK	GROUP	Eye	FaceConvos/OeilGauche/Cut/FS8-OR225.cnv
+S90-8	OD8	FILE	LOCK	GROUP	Eye	FaceConvos/OeilDroit/Cut/FS8-OR90.cnv
+S90-8	OG8	FILE	LOCK	GROUP	Eye	FaceConvos/OeilGauche/Cut/FS8-OR90.cnv
+S270-8	OD8	FILE	LOCK	GROUP	Eye	FaceConvos/OeilDroit/Cut/FS8-OR270.cnv
+S270-8	OG8	FILE	LOCK	GROUP	Eye	FaceConvos/OeilGauche/Cut/FS8-OR270.cnv
+S135-8	OD8	FILE	LOCK	GROUP	Eye	FaceConvos/OeilDroit/Cut/FS8-OR135.cnv
+S135-8	OG8	FILE	LOCK	GROUP	Eye	FaceConvos/OeilGauche/Cut/FS8-OR135.cnv
+S315-8	OD8	FILE	LOCK	GROUP	Eye	FaceConvos/OeilDroit/Cut/FS8-OR315.cnv
+S315-8	OG8	FILE	LOCK	GROUP	Eye	FaceConvos/OeilGauche/Cut/FS8-OR315.cnv
+
+# V1 -> mouth
+# -----------
+S0-8	B8	FILE	LOCK	GROUP	Mouth	FaceConvos/Bouche/Cut/FS8-OR0.cnv
+S180-8	B8	FILE	LOCK	GROUP	Mouth	FaceConvos/Bouche/Cut/FS8-OR180.cnv
+S45-8	B8	FILE	LOCK	GROUP	Mouth	FaceConvos/Bouche/Cut/FS8-OR45.cnv
+S225-8	B8	FILE	LOCK	GROUP	Mouth	FaceConvos/Bouche/Cut/FS8-OR225.cnv
+S90-8	B8	FILE	LOCK	GROUP	Mouth	FaceConvos/Bouche/Cut/FS8-OR90.cnv
+S270-8	B8	FILE	LOCK	GROUP	Mouth	FaceConvos/Bouche/Cut/FS8-OR270.cnv
+S135-8	B8	FILE	LOCK	GROUP	Mouth	FaceConvos/Bouche/Cut/FS8-OR135.cnv
+S315-8	B8	FILE	LOCK	GROUP	Mouth	FaceConvos/Bouche/Cut/FS8-OR315.cnv
+
+# eye, mouth -> face
+# ------------------
+OD8	F8	FILE	LOCK	FaceConvos/PartsToFace/OD-Faces-1.cnv
+OG8	F8	FILE	LOCK	FaceConvos/PartsToFace/OG-Faces-1.cnv
+B8	F8	FILE	LOCK	FaceConvos/PartsToFace/B-Faces-1.cnv

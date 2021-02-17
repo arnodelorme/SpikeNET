@@ -1,0 +1,54 @@
+# retina to orientation map connections
+# -------------------------------------
+ON		S0-8	FILE	LOCK	Convolutions/FS4-OR0.on
+OFF		S0-8	FILE	LOCK	Convolutions/FS4-OR0.off
+ON		S180-8	FILE	LOCK	Convolutions/FS4-OR180.on
+OFF		S180-8	FILE	LOCK	Convolutions/FS4-OR180.off
+ON		S45-8	FILE	LOCK	Convolutions/FS4-OR45.on
+OFF		S45-8	FILE	LOCK	Convolutions/FS4-OR45.off
+ON		S225-8	FILE	LOCK	Convolutions/FS4-OR225.on
+OFF		S225-8	FILE	LOCK	Convolutions/FS4-OR225.off
+ON		S90-8	FILE	LOCK	Convolutions/FS4-OR90.on
+OFF		S90-8	FILE	LOCK	Convolutions/FS4-OR90.off
+ON		S270-8	FILE	LOCK	Convolutions/FS4-OR270.on
+OFF		S270-8	FILE	LOCK	Convolutions/FS4-OR270.off
+ON		S135-8	FILE	LOCK	Convolutions/FS4-OR135.on
+OFF		S135-8	FILE	LOCK	Convolutions/FS4-OR135.off
+ON		S315-8	FILE	LOCK	Convolutions/FS4-OR315.on
+OFF		S315-8	FILE	LOCK	Convolutions/FS4-OR315.off
+
+# orientation map to face map connections (all blank to start with)
+# -----------------------------------------------------------------
+S0-8	s3	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S45-8	s3	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S90-8	s3	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S135-8	s3	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S180-8	s3	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S225-8	s3	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S270-8	s3	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S315-8	s3	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S0-8	s5	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S45-8	s5	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S90-8	s5	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S135-8	s5	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S180-8	s5	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S225-8	s5	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S270-8	s5	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S315-8	s5	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S0-8	s7	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S45-8	s7	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S90-8	s7	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S135-8	s7	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S180-8	s7	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S225-8	s7	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S270-8	s7	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S315-8	s7	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S0-8	s8	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S45-8	s8	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S90-8	s8	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S135-8	s8	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S180-8	s8	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S225-8	s8	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S270-8	s8	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+S315-8	s8	FILE	UNLOCK	GROUP	FACE	Convolutions/superv21x25
+

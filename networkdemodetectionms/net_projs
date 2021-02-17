@@ -1,0 +1,44 @@
+# Retina -> V1 connections (multiscale)
+# -------------------------------------
+x_ON	x_S0-8		FILE	LOCK	Convolutions/FS4-OR0.on
+x_OFF	x_S0-8		FILE	LOCK	Convolutions/FS4-OR0.off
+x_ON	x_S45-8		FILE	LOCK	Convolutions/FS4-OR45.on
+x_OFF	x_S45-8		FILE	LOCK	Convolutions/FS4-OR45.off
+x_ON	x_S90-8		FILE	LOCK	Convolutions/FS4-OR90.on
+x_OFF	x_S90-8		FILE	LOCK	Convolutions/FS4-OR90.off
+x_ON	x_S135-8	FILE	LOCK	Convolutions/FS4-OR135.on
+x_OFF	x_S135-8	FILE	LOCK	Convolutions/FS4-OR135.off
+x_ON	x_S180-8	FILE	LOCK	Convolutions/FS4-OR180.on
+x_OFF	x_S180-8	FILE	LOCK	Convolutions/FS4-OR180.off
+x_ON	x_S225-8	FILE	LOCK	Convolutions/FS4-OR225.on
+x_OFF	x_S225-8	FILE	LOCK	Convolutions/FS4-OR225.off
+x_ON	x_S270-8	FILE	LOCK	Convolutions/FS4-OR270.on
+x_OFF	x_S270-8	FILE	LOCK	Convolutions/FS4-OR270.off
+x_ON	x_S315-8	FILE	LOCK	Convolutions/FS4-OR315.on
+x_OFF	x_S315-8	FILE	LOCK	Convolutions/FS4-OR315.off
+
+# V1 -> face (multiscale)
+# -----------------------
+x_S0-8		x_F8		FILE	LOCK	GROUP	FACE	MSFaceConvos/S0-8.cnv
+x_S45-8		x_F8		FILE	LOCK	GROUP	FACE	MSFaceConvos/S45-8.cnv
+x_S90-8		x_F8		FILE	LOCK	GROUP	FACE	MSFaceConvos/S90-8.cnv
+x_S135-8	x_F8		FILE	LOCK	GROUP	FACE	MSFaceConvos/S135-8.cnv
+x_S180-8	x_F8		FILE	LOCK	GROUP	FACE	MSFaceConvos/S180-8.cnv
+x_S225-8	x_F8		FILE	LOCK	GROUP	FACE	MSFaceConvos/S225-8.cnv
+x_S270-8	x_F8		FILE	LOCK	GROUP	FACE	MSFaceConvos/S270-8.cnv
+x_S315-8	x_F8		FILE	LOCK	GROUP	FACE	MSFaceConvos/S315-8.cnv
+
+# lateral connexions in V1
+# ------------------------
+x_S0-8		x_S0-8		FILE	LOCK	MULT	0.5	Convolutions/zhaoping_OR0
+x_S45-8		x_S45-8		FILE	LOCK	MULT	0.5	Convolutions/zhaoping_OR45
+x_S90-8		x_S90-8		FILE	LOCK	MULT	0.5	Convolutions/zhaoping_OR90
+x_S135-8	x_S135-8	FILE	LOCK	MULT	0.5	Convolutions/zhaoping_OR135
+x_S180-8	x_S180-8	FILE	LOCK	MULT	0.5	Convolutions/zhaoping_OR0
+x_S225-8	x_S225-8	FILE	LOCK	MULT	0.5	Convolutions/zhaoping_OR45
+x_S270-8	x_S270-8	FILE	LOCK	MULT	0.5	Convolutions/zhaoping_OR90
+x_S315-8	x_S315-8	FILE	LOCK	MULT	0.5	Convolutions/zhaoping_OR135
+
+# integrative face map
+# --------------------
+x_F8	F8	FILE LOCK	Convolutions/Gauss

@@ -1,0 +1,11 @@
+# retina maps
+# -----------
+Name	ON		Layer 0 Zoom 0  Threshold 0.5	Estim 0.5		Pos	100	120	0 Input	(Convo	Convolutions/OnCenter	Image1 0)
+Name	OFF		Layer 0 Zoom 0 	Threshold 0.5	Estim 0.5		Pos	100	240	0 Input	(Convo	Convolutions/OffCenter	Image1 0)
+
+# orientation maps
+# ----------------
+Name	S0-8	Layer 1	Threshold 0.120	Estim	0.15	Pos	210	0	0
+Name	S90-8	Layer 1	Threshold 0.120	Estim	0.15	Pos	210	120	0
+Name	S180-8	Layer 1	Threshold 0.120	Estim	0.15	Pos	210	240	0
+Name	S270-8	Layer 1	Threshold 0.120	Estim	0.15	Pos	210	360	0

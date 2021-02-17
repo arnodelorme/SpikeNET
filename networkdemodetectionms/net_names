@@ -1,0 +1,24 @@
+
+# multiscale retina maps
+# ----------------------
+Name	x_ON		Layer 0 Zoom 0  Threshold 0.4	Estim 0.4	Pos	0	200	0	Input	(Convo	Convolutions/OnCenter	Image1)
+Name	x_OFF		Layer 0 Zoom 0 	Threshold 0.4	Estim 0.4	Pos	0	400	0	Input	(Convo	Convolutions/OffCenter 	Image1)
+
+# multiscale orientation maps
+# ---------------------------
+Name	x_S0-8		Layer 1	Zoom 0	Threshold 0.24	MOD	0	Estim	0.1	Pos	210	0	0
+Name	x_S45-8		Layer 1	Zoom 0	Threshold 0.24	MOD	0	Estim	0.1	Pos	210	200	0
+Name	x_S90-8		Layer 1	Zoom 0	Threshold 0.24	MOD	0	Estim	0.1	Pos	210	400	0
+Name	x_S135-8	Layer 1	Zoom 0	Threshold 0.24	MOD	0	Estim	0.1	Pos	210	600	0
+Name	x_S180-8	Layer 1	Zoom 0	Threshold 0.24	MOD	0	Estim	0.1	Pos	420	0	0
+Name	x_S225-8	Layer 1	Zoom 0	Threshold 0.24	MOD	0	Estim	0.1	Pos	420	200	0
+Name	x_S270-8	Layer 1	Zoom 0	Threshold 0.24	MOD	0	Estim	0.1	Pos	420	400	0
+Name	x_S315-8	Layer 1	Zoom 0	Threshold 0.24	MOD	0	Estim	0.1	Pos	420	600	0
+
+# multiscale face selective maps
+# ------------------------------
+Name	x_F8		Layer 2	Zoom 0	Threshold 0.182 0.18	0.16 	MOD 0.1	Estim	0.001	0.0003	1	Pos	630	200	0
+
+# anyscale face selective map
+# ---------------------------
+Name	F8			Layer 3	Zoom 0	Threshold 0.02	MOD 0	Estim	0.05	Pos	630	400	0

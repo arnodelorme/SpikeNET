@@ -1,0 +1,9 @@
+# interative
+set NO_SHOW		0	          # verbose: 0=off, 1=on
+set DISPLAY		1             # display: 0=off, 1=on
+set WAIT_ENTER  1             # wait for the user to press enter between each image propgation: 0=off, 1=on
+set NB_SPIKENET 3             # number of multiscale SpikeNET (not documented yet)
+
+# computing
+set MAX_TEMPS       100       # number of time steps
+set MAX_NORM	    10000      # spike latency sorting table size (see manual)

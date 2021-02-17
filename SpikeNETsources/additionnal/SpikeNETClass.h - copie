@@ -1,0 +1,103 @@
+
+#ifndef _SPIKECLASS
+#define _SPIKECLASS
+
+// include global
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+// include local
+#include "allDefs.h"
+#include "allStructs.h"
+#include "Output.h"
+#include "Map.h"
+#include "Sockets.h"
+
+// uniquement Mac
+/*#if SYSTEME == MAC
+
+#include <resources.h>
+#include <SIOUX.h>
+#include <quickdraw.h>
+#include <Gestalt.h>
+#include <lowmem.h>
+#include <script.h>
+#include <power.h>
+
+// multiprocessing
+
+// chrnometrage
+#include "mytimer.h"
+//#include "error.h"
+
+#endif
+*/
+class SuperSpikeClass;
+class SpikeLispSpike;
+class GlobalImg;
+
+class SpikeClass
+{
+
+private:
+
+  // pour les variables d'environnement
+  EnvVar                *env;
+  int					scaleType;
+  SuperSpikeClass		*pappy;
+  int					fact_zoom_SpikeNET;
+  int					spikeNET_num;
+   
+  //  variables essentielles	
+  int 			size_x, size_y;							// taille de base de l'image
+  int			nb_carte;								// nombre de cartes
+  FILE          *fileOutput;
+
+public:
+  carte_base	*tab_carte[MAX_CARTE];					// tableau des cartes
+private:
+//  coord_array 	**liste_in, **liste_out, **liste_tmp;	// listes de spike
+//  retine		*retina;
+//  retine_T		*retinaTransient;
+
+  // apprentissage
+  int			nonElues;
+  int			layer_learn;
+    
+  // variables des couches pour l'affichage et ecran
+  screen		*SCREEN;						// screen object
+  disk			*DISK;							// screen object
+  char			tab_couche		[MAX_CARTE];	// correspondance au niveau des couches
+  long			ordre_couche	[MAX_COUCHE];	// ordre de decharge dans la couche (affichage)
+  double		tab_estim		[MAX_COUCHE];	// estimation du nb de decharge dans la couche
+
+  void   		init_couche	   ();
+  MapList		mapList;
+  //void   		save_config    ();
+  //int 		readmulti	   (char *var, char *tmp, FILESTREAM &map_names, int multiscale);
+
+public:
+    
+  void   		SpikeClassInit ();
+  SpikeClass(int largeur, int hauteur, int fact_zoom, int OffsetEcran, EnvVar *env0, int scaleType0, SuperSpikeClass	*pappy0, disk *DISK, screen *SCREEN);
+
+  //SpikeClass(char *ImageName0, int fact_zoom, int OffsetEcran, EnvVar *env0, int scaleType0, SuperSpikeClass *pappy0);
+  //SpikeClass(int largeur, int hauteur, int fact_zoom, EnvVar *env0, int scaleType0, SuperSpikeClass	*pappy0);
+  carte_base *findInside(char *name);
+  void LoadImage(GlobalImg **lstImg);
+  //void LoadImage(unsigned char *addresse);
+  void Compute( int temps );
+  void saveAllConvos(int count_image);
+  void Learn( int temps );
+  void SaveOnDisk(char *ImageName, int count_image);
+  void ResetImageLearn(GlobalImg **lstImg);
+  //carte_base *addMap(int couche, char *name, int mapNumber, double seuil, double mod, double estimer, int zoomer, double decay, int coordx, int coordy, int zoomDsp, char *learn, proc *local, char *strLisp, char *object, int convSpeed);
+  //SpikeLispSpike *treatLisp(char *str, double spikePC);
+  void  modifMap( double value, int layer);
+  void actualiseSession( int modulator);
+  void addMap( carte_base *ptr) { tab_carte[ nb_carte++ ] = ptr; }
+
+};
+
+#endif
