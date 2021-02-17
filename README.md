@@ -17,7 +17,7 @@ other softwares)
 
 In the main SpikeNET folder type
 
-	SpikeNET
+	./SpikeNET
 
 
 3 - Directory content
