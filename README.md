@@ -1,34 +1,25 @@
-***********
 1 - Install
-***********
+=====
 
-Unless you have Linux 2.4.20, you will have to compile 
-SpikeNET (but the process is very easy compared to 
-other softwares)
+SpikeNet is compiled by default for OSX 64 bit.
 
-1.1 Compile SpikeNET
+To recompile SpikeNET
 
-	cd SpikeNETsources
+	cd src
+	make clean
 	make
 	cd ..
 
-1.2 Create symbolic link to SpikeNET exe file
-
-	rm -f SpikeNET
-	ln -s SpikeNETsources/SpikeNET
-
-************
 2 - Run Demo
-************
+=====
 
 In the main SpikeNET folder type
 
-	SpikeNET
+	./SpikeNET
 
 
-*********************
 3 - Directory content
-*********************
+=====
 
 Convolution (connexion) file folders for demo and exemples
 ----------------------------------------------------------
@@ -52,12 +43,6 @@ SpikeNET demo and example model directories
 	network_example_4facesoptimize
 	network_example_orientation
 
-SpikeNET temporary and ressource files
---------------------------------------
-	console				
-	LUTLEARN
-	outputFile0
-	tmp_SpikeNET_file
 
 SpikeNET convolution output directory
 -------------------------------------
