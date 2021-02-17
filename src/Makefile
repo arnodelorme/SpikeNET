@@ -9,8 +9,15 @@
 # To compile multiple versions of a program or library, please study
 #     http://www.its.caltech.edu/~jafl/jcc/multi_version.html
 
-# Useful directories
-X11LIB1 = /opt/X11/include/X11
+# **************************** CHANGE X11 LOCATION **************
+# Mac (witch XQuartz installed)
+# X11LIB1 = /opt/X11/include/X11
+
+# Linux
+X11LIB1 = /usr/include/X11
+# **************************** CHANGE X11 LOCATION **************
+
+# Common
 X11LIB2 = /usr/X11/include
 
 MYCODEDIR := -I. -I./sources-imgs -I./sources-readImgs -I./IO -I./Maps -lX11 -L${X11LIB1} -I${X11LIB2}  -I./SpikeNETcore
