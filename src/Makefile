@@ -11,10 +11,10 @@
 
 # **************************** CHANGE X11 LOCATION **************
 # Mac (witch XQuartz installed)
-# X11LIB1 = /opt/X11/include/X11
+X11LIB1 = /opt/X11/include/X11
 
 # Linux
-X11LIB1 = /usr/include/X11
+# X11LIB1 = /usr/include/X11
 # **************************** CHANGE X11 LOCATION **************
 
 # Common
