@@ -1,21 +1,25 @@
 1 - Install
 =====
 
-SpikeNet is compiled by default for OSX 64 bit.
+SpikeNet is compiled by default for OSX 64 bit and Linux Fedora core
 
-To recompile SpikeNET
+To recompile SpikeNET. Edit the Makefile file to change the location of the X11 librairies (type "locate X11" on your command line prompt). SpikeNET intentionnaly uses very few external librairies.
 
 	cd src
 	make clean
 	make
 	cd ..
+	
+ This creates an executable named "SpikeNET".
 
 2 - Run Demo
 =====
 
-In the main SpikeNET folder type
+In the main SpikeNET folder type one of the following depending of your platform
 
 	./SpikeNET
+	./SpikeNET_linux
+	./SpikeNET_osx
 
 
 3 - Directory content
@@ -57,5 +61,4 @@ SpikeNET GNU license
 	license.txt
 
 
-
-Arnaud Delorme, March, 11, 2004, San Diego CA
+Arnaud Delorme, February, 17, 2021
