@@ -1,7 +1,7 @@
 1 - Install
 =====
 
-SpikeNet is compiled by default for OSX 64 bit and Linux Fedora core
+SpikeNet is compiled by default for OSX 64 bit and Linux Fedora core.
 
 To recompile SpikeNET. Edit the Makefile file to change the location of the X11 librairies (type "locate X11" on your command line prompt). SpikeNET intentionnaly uses very few external librairies.
 
