@@ -77,7 +77,7 @@ JAR    := jar
 
 # SpikeNET
 
-SpikeNET :: ./SpikeNETcore/main.o ./SpikeNETcore/SpikeLisp.o ./SpikeNETcore/SpikeLists.o ./SpikeNETcore/SpikeListsExtended.o ./SpikeNETcore/SuperSpikeNETClass.o ./SpikeNETcore/Weights.o ./Maps/learning.o ./Maps/Map.o ./Maps/MapList.o ./IO/Input.o ./IO/Sockets.o ./IO/SpikeInputs.o ./IO/y.tab.o ./sources-imgs/BaseImg.o ./sources-imgs/GlobalImg.o ./sources-imgs/GlobalImgTreat.o ./sources-imgs/PicturePPM.o ./sources-imgs/PictureTARGA.o ./sources-readImgs/ImageModifier.o ./sources-readImgs/NewImageList.o
+../SpikeNET :: ./SpikeNETcore/main.o ./SpikeNETcore/SpikeLisp.o ./SpikeNETcore/SpikeLists.o ./SpikeNETcore/SpikeListsExtended.o ./SpikeNETcore/SuperSpikeNETClass.o ./SpikeNETcore/Weights.o ./Maps/learning.o ./Maps/Map.o ./Maps/MapList.o ./IO/Input.o ./IO/Sockets.o ./IO/SpikeInputs.o ./IO/y.tab.o ./sources-imgs/BaseImg.o ./sources-imgs/GlobalImg.o ./sources-imgs/GlobalImgTreat.o ./sources-imgs/PicturePPM.o ./sources-imgs/PictureTARGA.o ./sources-readImgs/ImageModifier.o ./sources-readImgs/NewImageList.o
   ifeq (${suffix SpikeNET}, .a)
 	@${RM} $@
 	${AR} crs $@ ${filter-out %.a %.so, $^}
