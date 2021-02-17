@@ -1,11 +1,9 @@
 1 - Install
 =====
 
-Unless you have Linux 2.4.20, you will have to compile 
-SpikeNET (but the process is very easy compared to 
-other softwares)
+SpikeNet is compiled by default for OSX 64 bit.
 
-1.1 Compile SpikeNET
+To recompile SpikeNET
 
 	cd src
 	make clean
