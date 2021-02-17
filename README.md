@@ -45,12 +45,6 @@ SpikeNET demo and example model directories
 	network_example_4facesoptimize
 	network_example_orientation
 
-SpikeNET temporary and ressource files
---------------------------------------
-	console				
-	LUTLEARN
-	outputFile0
-	tmp_SpikeNET_file
 
 SpikeNET convolution output directory
 -------------------------------------
