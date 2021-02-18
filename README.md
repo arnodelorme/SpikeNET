@@ -1,6 +1,6 @@
 SpikeNET
 ===
-This project is no longer actively supported, although the code is functional.
+Although, as of 2021, the code is still functional, this project is no longer supported.
 
 SpikeNET is a program designed for simulating large networks of asynchronous spiking neurons. Neurons are simulated with a limited number of parameters that include classic properties like the post-synaptic potential and threshold and more novel features like dendritic sensitivity. SpikeNET can be used to simulate networks with millions of neurons and hundreds of millions of synaptic weights. Optimization of computation time and the aim of real-time computation has been one of the driving forces behind the development of SpikeNET.
 
