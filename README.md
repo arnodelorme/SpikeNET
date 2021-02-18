@@ -96,15 +96,20 @@ In the main SpikeNET folder type one of the following depending of your platform
 3 - Directory content
 ---
 Convolution (connexion) file folders for demo and exemples
+```
 	Convolutions
 	convos40Faces
 	FaceConvos
 	MSFaceConvos
+```
 
 Image folder
+```
 	Images
+```
 
 SpikeNET demo and example model directories
+```
 	networkdemo40faceslearn
 	networkdemo40facesrandom
 	networkdemo40facesrun
@@ -113,16 +118,22 @@ SpikeNET demo and example model directories
 	network_example_4faceslearn
 	network_example_4facesoptimize
 	network_example_orientation
+```
 
 
 SpikeNET convolution output directory
+```
 	save_convos
+```
 
 SpikeNET source directory
-	SpikeNETsources
+```
+	src
+```
 
 SpikeNET GNU license
+```
 	license.txt
-
+```
 
 Arnaud Delorme, February, 17, 2021
