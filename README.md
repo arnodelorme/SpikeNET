@@ -88,52 +88,53 @@ To recompile SpikeNET. Edit the Makefile file to change the location of the X11 
 
 In the main SpikeNET folder type one of the following depending of your platform
 
-	./SpikeNET
-	./SpikeNET_linux
-	./SpikeNET_osx
-
+```
+./SpikeNET
+./SpikeNET_linux
+./SpikeNET_osx
+```
 
 3 - Directory content
 ---
-Convolution (connexion) file folders for demo and exemples
+Convolution (weights) files for demo and examples
 ```
-	Convolutions
-	convos40Faces
-	FaceConvos
-	MSFaceConvos
+Convolutions
+convos40Faces
+FaceConvos
+MSFaceConvos
 ```
 
 Image folder
 ```
-	Images
+Images
 ```
 
 SpikeNET demo and example model directories
 ```
-	networkdemo40faceslearn
-	networkdemo40facesrandom
-	networkdemo40facesrun
-	networkdemodetection
-	networkdemodetectionms
-	network_example_4faceslearn
-	network_example_4facesoptimize
-	network_example_orientation
+networkdemo40faceslearn
+networkdemo40facesrandom
+networkdemo40facesrun
+networkdemodetection
+networkdemodetectionms
+network_example_4faceslearn
+network_example_4facesoptimize
+network_example_orientation
 ```
 
 
 SpikeNET convolution output directory
 ```
-	save_convos
+save_convos
 ```
 
 SpikeNET source directory
 ```
-	src
+src
 ```
 
 SpikeNET GNU license
 ```
-	license.txt
+license.txt
 ```
 
 Arnaud Delorme, February, 17, 2021
