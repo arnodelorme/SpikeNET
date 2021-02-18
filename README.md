@@ -24,8 +24,10 @@ A glimpse at SpikeNET performances
 ---
 When we tested the performance of SpikeNET in 1999 rigorously, SpikeNET could compute roughly 20 million connections per second on a standard desktop computer (Macintosh Power PC 233 Mhz). At this time, we believe that SpikeNET was the most powerful convolutional neural network for image classification available.
 
+Publications
+====
 Publications directly related to SpikeNET
-===
+---
 * Delorme, A., Thorpe, S. (2003). SpikeNET: An Event-driven Simulation Package for Modeling Large Networks of Spiking Neurons, <i>Network: Comput. Neural Syst.</i>, 14, 613:627. <a
  href="https://sccn.ucsd.edu/~arno/mypapers/delormeN2003.pdf" target="_blank">Author's PDF</a>, <a href="http://www.iop.org/EJ/article/0954-898X/14/4/301/ne3401.pdf" target="_blank">journal's link</a>. 
 * Delorme, A., Thorpe, S. (2001) Face processing 
@@ -40,7 +42,7 @@ of integrate and fire neurons. <i>Neurocomputing</i>, 26-27, 989-996. <a
 48(1-3), 229-239. <a href="https://sccn.ucsd.edu/~arno/mypapers/VanRullen98.pdf" target="_blank">Author's PDF</a>, <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6T2K-3V5V00M-10&_user=4429&_handle=W-WA-A-A-BD-MsSAYVA-UUW-AUZUDDDCZV-AYCBVVCAE-BD-U&_fmt=full&_coverDate=11%2F01%2F1998&_rdoc=28&_orig=browse&_srch=%23toc%234921%231998%23999519998%2332734!&_cdi=4921&view=c&_acct=C000000152&_version=1&_urlVersion=0&_userid=4429&md5=c93cd51c8e5f5f2b9859484bb831bb25" target="_blank">Science Direct</a>.
 
 Publications indirectly related to SpikeNET
-===
+---
 * Delorme, A. (2003) Early Cortical Orientation Selectivity:
 How Fast Shunting Inhibition Decodes the Order of Spike Latencies. <i>Journal of Computational Neuroscience</i>, 15, 357-365. <a href="https://sccn.ucsd.edu/~arno/mypapers/Delorme2003.pdf" target="_blank">Author's PDF</a>, <a href="http://ipsapp008.kluweronline.com/content/getfile/4835/47/5/fulltext.pdf" target = "_blank">journal's link</a>.
 * Thorpe, S., Delorme, A., VanRullen, R. (2001)
