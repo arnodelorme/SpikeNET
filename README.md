@@ -1,6 +1,6 @@
 SpikeNET
 ===
-This project is no longer actively supported. It is provided for historical purposes.
+This project is no longer actively supported, although the code is functional.
 
 SpikeNET is a program designed for simulating large networks of asynchronous spiking neurons. Neurons are simulated with a limited number of parameters that include classic properties like the post-synaptic potential and threshold and more novel features like dendritic sensitivity. SpikeNET can be used to simulate networks with millions of neurons and hundreds of millions of synaptic weights. Optimization of computation time and the aim of real-time computation has been one of the driving forces behind the development of SpikeNET.
 
@@ -22,6 +22,8 @@ What SpikeNET cannot  do
 
 A glimpse at SpikeNET performances 
 ---
+See this [page for more information](http://arnauddelorme.com/neural-network-2/).
+
 When we tested the performance of SpikeNET in 1999 rigorously, SpikeNET could compute roughly 20 million connections per second on a standard desktop computer (Macintosh Power PC 233 Mhz). At this time, we believe that SpikeNET was the most powerful convolutional neural network for image classification available.
 
 Publications
