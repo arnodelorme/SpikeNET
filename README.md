@@ -2,29 +2,29 @@ SpikeNET
 ===
 Although, as of 2021, the code is still functional, this project is no longer supported.
 
-SpikeNET is a program designed for simulating large networks of asynchronous spiking neurons. Neurons are simulated with a limited number of parameters that include classic properties like the post-synaptic potential and threshold and more novel features like dendritic sensitivity. SpikeNET can be used to simulate networks with millions of neurons and hundreds of millions of synaptic weights. Optimization of computation time and the aim of real-time computation has been one of the driving forces behind the development of SpikeNET.
+SpikeNET is a program designed to simulate large networks of asynchronous spiking neurons. Neurons are modeled with a limited number of parameters that include classic properties such as post-synaptic potential and threshold, as well as more novel features like dendritic sensitivity. SpikeNET can be used to simulate networks with millions of neurons and hundreds of millions of synaptic weights. Optimization of computation time, with the goal of real-time performance, has been a central focus in the development of SpikeNET.
 
 What SpikeNET can do
 ----
 * Perform image processing using a biologically plausible network of neurons.
-* Simulate millions of integrate-and-fire neurons organized in retinotopical maps.
-* Connect these neuronal maps using projection files, and regroup common synaptic weights to save memory in order to be able to declare several hundreds of billions of synaptic connections.
-* Convert gray level images into lists of spikes (also SpikeNET can perform a variety of preprocessing on the input images).
-* Implement a complex mechanism for projection between neuronal maps of different sizes.
-* Implement supervised learning.
-* Implement the efficient neuronal Rank-Order-Coding scheme (optional)
+* Simulate millions of integrate-and-fire neurons organized in retinotopic maps.
+* Connect these neuronal maps using projection files, and group shared synaptic weights to reduce memory usage, enabling the definition of hundreds of billions of synaptic connections.
+* Convert grayscale images into lists of spikes, with optional preprocessing of input images.
+* Implement complex projection mechanisms between neuronal maps of different sizes.
+* Support supervised learning.
+* Implement the efficient neuronal rank-order coding scheme (optional).
 
-What SpikeNET cannot  do
+What SpikeNET cannot do
 ----
-* SpikeNET does not have a comprehensive graphic interface. The neural network topology must be described using several configuration files (documented below).
-* SpikeNET has never been used to process more than one spike per neuron (SpikeNET was initially designed to test the biological plausibility of feed-forward processing using at most one spike per neuron). Note that it is still possible to implement lateral inhibition or excitation and feedback as long as neurons discharge only once.
-* SpikeNET can not implement synaptic connections with various delays. All synaptic connections are instantaneous.
+* SpikeNET does not provide a comprehensive graphical interface. The neural network topology must be described using several configuration files (documented below).
+* SpikeNET has not been used to process more than one spike per neuron. It was originally designed to test the biological plausibility of feedforward processing using at most one spike per neuron. Note that lateral inhibition, excitation, and feedback can still be implemented as long as neurons discharge only once.
+* SpikeNET cannot implement synaptic connections with variable delays. All synaptic connections are instantaneous.
 
-A glimpse at SpikeNET performances 
+A glimpse at SpikeNET performance
 ---
 See this [page for more information](http://arnauddelorme.com/neural-network-2/).
 
-When we tested the performance of SpikeNET in 1999 rigorously, SpikeNET could compute roughly 20 million connections per second on a standard desktop computer (Macintosh Power PC 233 Mhz). At this time, we believe that SpikeNET was the most powerful convolutional neural network for image classification available.
+When we rigorously tested the performance of SpikeNET in 1999, it could compute roughly 20 million connections per second on a standard desktop computer (Macintosh PowerPC 233 MHz). At that time, we believe that SpikeNET was the most powerful convolutional neural network available for image classification.
 
 Publications
 ====
